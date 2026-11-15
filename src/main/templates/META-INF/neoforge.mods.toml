@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="csfluid"
+version="3.2.0"
+displayName="Compact Steam Lava"
+description='''
+Лава по трубам и из соседних баков, авто-режим нагрузки и переключение гаечным ключом для Compact Steam Engine.
+'''
+
+[[mixins]]
+config="csfluid.mixins.json"
+
+[[dependencies.csfluid]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.219,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.csfluid]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.csfluid]]
+    modId="compactsteam"
+    type="required"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
